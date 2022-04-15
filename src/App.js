@@ -11,15 +11,19 @@ function App() {
 
   return (
     <div className="relative min-h-screen">
-      <Nav savedCount={savedCount} setSavedCount={setSavedCount} />
+      <div className="mx-auto max-w-6xl">
+        <Nav savedCount={savedCount} setSavedCount={setSavedCount} />
 
-      <Slider />
+        <div className="lg:mt-20 lg:flex lg:items-center lg:justify-center lg:gap-12">
+          <Slider />
 
-      <Details
-        count={count}
-        setCount={setCount}
-        setSavedCount={setSavedCount}
-      />
+          <Details
+            count={count}
+            setCount={setCount}
+            setSavedCount={setSavedCount}
+          />
+        </div>
+      </div>
     </div>
   );
 }

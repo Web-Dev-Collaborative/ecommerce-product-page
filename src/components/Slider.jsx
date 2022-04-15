@@ -20,7 +20,7 @@ export default function Slider() {
     setCurrImg(currImg >= images.length - 1 ? 0 : currImg + 1);
 
   return (
-    <div className="relative">
+    <div className="relative lg:max-w-md">
       <button
         type="button"
         className="absolute left-4 top-1/2 flex aspect-square w-10 items-center justify-center rounded-full bg-white"

@@ -7,8 +7,8 @@ import cartImage from '../images/image-product-1-thumbnail.jpg';
 
 export default function Cart({ savedCount, setSavedCount }) {
   return (
-    <div className="absolute top-[70px] left-1/2 z-10 w-[95%] max-w-md -translate-x-1/2 rounded-lg bg-white shadow-2xl shadow-tertiary/70 md:right-0 md:top-20 md:-translate-x-16">
-      <span className="block border-b border-solid border-tertiary-dark p-6 font-bold">
+    <div className="absolute top-[70px] left-1/2 z-10 w-[95%] max-w-md -translate-x-1/2 rounded-lg bg-white shadow-2xl shadow-tertiary/70 md:right-0 md:top-20 md:-translate-x-16 lg:top-28 lg:right-0 lg:w-96 lg:translate-x-56">
+      <span className="border-secondary-dark-dark block border-b border-solid p-6 font-bold">
         Cart
       </span>
 
