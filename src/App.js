@@ -1,13 +1,25 @@
+import { Details } from './Details';
+import { useState } from 'react';
+
+// components
 import Nav from './Nav';
+import Slider from './Slider';
 
 function App() {
-  const [currImg, setCurrImg] = useState(0);
+  const [count, setCount] = useState(0);
+  const [savedCount, setSavedCount] = useState(0);
 
   return (
-    <div className="min-h-screen bg-black">
-      <Nav />
+    <div className="min-h-screen">
+      <Nav savedCount={savedCount} />
 
-      <div></div>
+      <Slider />
+
+      <Details
+        count={count}
+        setCount={setCount}
+        setSavedCount={setSavedCount}
+      />
     </div>
   );
 }
