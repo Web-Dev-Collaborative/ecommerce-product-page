@@ -1,12 +1,12 @@
 import { useState } from 'react';
 
 // assets
-import image1 from './images/image-product-1.jpg';
-import image2 from './images/image-product-2.jpg';
-import image3 from './images/image-product-3.jpg';
-import image4 from './images/image-product-4.jpg';
-import prevIcon from './images/icon-previous.svg';
-import nextIcon from './images/icon-next.svg';
+import image1 from '../images/image-product-1.jpg';
+import image2 from '../images/image-product-2.jpg';
+import image3 from '../images/image-product-3.jpg';
+import image4 from '../images/image-product-4.jpg';
+import prevIcon from '../images/icon-previous.svg';
+import nextIcon from '../images/icon-next.svg';
 
 export default function Slider() {
   const [currImg, setCurrImg] = useState(0);
@@ -50,6 +50,26 @@ export default function Slider() {
           className="fit-w-full absolute top-1/2 left-1/2 h-fit -translate-x-1.5 -translate-y-1/2"
         />
       </button>
+
+      <div className="hidden md:my-6 md:flex md:w-full md:items-center md:justify-evenly">
+        {images.map((image, index) => (
+          <div
+            key={image}
+            className={`rounded-xl ${
+              index === currImg && 'outline outline-primary'
+            }`}
+          >
+            <img
+              src={image}
+              alt="shoes"
+              className={`w-32 rounded-lg transition-all duration-300 hover:cursor-pointer hover:opacity-40 ${
+                index === currImg && 'opacity-40'
+              }`}
+              onClick={() => setCurrImg(index)}
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

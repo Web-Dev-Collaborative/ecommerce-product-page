@@ -1,9 +1,9 @@
-import { Details } from './Details';
 import { useState } from 'react';
 
 // components
-import Nav from './Nav';
-import Slider from './Slider';
+import Nav from './components/Nav';
+import Slider from './components/Slider';
+import Details from './components/Details';
 
 function App() {
   const [count, setCount] = useState(0);

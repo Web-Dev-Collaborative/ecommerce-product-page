@@ -4,10 +4,10 @@ import { useState } from 'react';
 import Cart from './Cart';
 
 // assets
-import menuIcon from './images/icon-menu.svg';
-import cartIcon from './images/icon-cart.svg';
-import avatar from './images/image-avatar.png';
-import closeIcon from './images/icon-close.svg';
+import menuIcon from '../images/icon-menu.svg';
+import cartIcon from '../images/icon-cart.svg';
+import avatar from '../images/image-avatar.png';
+import closeIcon from '../images/icon-close.svg';
 
 export default function Nav({ savedCount, setSavedCount }) {
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -74,7 +74,11 @@ export default function Nav({ savedCount, setSavedCount }) {
       )}
 
       <button type="button" onClick={() => setIsCartOpen(!isCartOpen)}>
-        <img src={avatar} alt="avatar" className="w-6" />
+        <img
+          src={avatar}
+          alt="avatar"
+          className="w-6 rounded-full hover:outline hover:outline-1 hover:outline-primary md:w-10"
+        />
       </button>
     </nav>
   );

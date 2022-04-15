@@ -1,31 +1,32 @@
 import Button from './Button';
 
 // assets
-import plusIcon from './images/icon-plus.svg';
-import minusIcon from './images/icon-minus.svg';
+import plusIcon from '../images/icon-plus.svg';
+import minusIcon from '../images/icon-minus.svg';
 
-export function Details({ setCount, count, setSavedCount }) {
+export default function Details({ setCount, count, setSavedCount }) {
   const deductCount = () =>
     setCount((prevCount) => (count === 0 ? 0 : prevCount - 1));
 
   const addCount = () => setCount((prevCount) => prevCount + 1);
 
   return (
-    <div className="px-6 py-4">
+    <div className="px-6 py-4 pb-20">
       <span className="mb-4 inline-block text-xs font-bold uppercase tracking-widest text-primary">
         sneaker company
       </span>
-      <h1 className="mb-4 text-3xl font-bold text-tertiary">
+
+      <h1 className="mb-4 text-3xl font-bold text-tertiary md:text-4xl">
         Fall Limited Edition Sneakers
       </h1>
 
-      <p className="mb-6 text-tertiary-light">
+      <p className="mb-6 max-w-md text-tertiary-light">
         These low-profile sneakers are your perfect casual wear companion.
         Featuring a durable rubber outer sole, they’ll withstand everything the
         weather can offer.
       </p>
 
-      <div className="mb-5 flex items-center justify-between">
+      <div className="mb-5 flex items-center justify-between md:justify-start md:gap-8">
         <div className="flex items-center gap-4">
           <span className="text-3xl font-bold">$125.00</span>
           <span className="rounded-md bg-secondary px-2 font-bold text-primary">
@@ -37,15 +38,23 @@ export function Details({ setCount, count, setSavedCount }) {
         </span>
       </div>
 
-      <div className="space-y-4">
-        <div className="flex w-full items-center justify-between rounded-lg bg-secondary-dark p-4 px-3">
-          <button type="button" onClick={deductCount} className="p-3">
+      <div className="space-y-4 md:flex md:items-center md:gap-4 md:space-y-0">
+        <div className="flex w-full items-center justify-between rounded-lg bg-secondary-dark p-3 md:basis-8/12">
+          <button
+            type="button"
+            onClick={deductCount}
+            className="p-3 transition-all duration-300 hover:opacity-50"
+          >
             <img src={minusIcon} alt="minus" />
           </button>
 
           <span className="font-bold">{count}</span>
 
-          <button type="button" onClick={addCount} className="p-3">
+          <button
+            type="button"
+            onClick={addCount}
+            className="p-3 transition-all duration-300 hover:opacity-50"
+          >
             <img src={plusIcon} alt="plus" />
           </button>
         </div>

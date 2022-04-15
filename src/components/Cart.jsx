@@ -2,15 +2,16 @@
 import Button from './Button';
 
 // assets
-import deleteIcon from './images/icon-delete.svg';
-import cartImage from './images/image-product-1-thumbnail.jpg';
+import deleteIcon from '../images/icon-delete.svg';
+import cartImage from '../images/image-product-1-thumbnail.jpg';
 
 export default function Cart({ savedCount, setSavedCount }) {
   return (
-    <div className="absolute top-[70px] left-1/2 z-10 w-[95%] -translate-x-1/2 rounded-lg  bg-white">
+    <div className="absolute top-[70px] left-1/2 z-10 w-[95%] max-w-md -translate-x-1/2 rounded-lg bg-white shadow-2xl shadow-tertiary/70 md:right-0 md:top-20 md:-translate-x-16">
       <span className="block border-b border-solid border-tertiary-dark p-6 font-bold">
         Cart
       </span>
+
       <div className={`w-full ${!savedCount ? 'py-20' : 'p-6'}`}>
         {!savedCount ? (
           <span className="inline-block w-full text-center font-bold text-tertiary-light">
