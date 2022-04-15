@@ -1,9 +1,13 @@
-import './App.css';
+import Nav from './Nav';
 
 function App() {
+  const [currImg, setCurrImg] = useState(0);
+
   return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+    <div className="min-h-screen bg-black">
+      <Nav />
+
+      <div></div>
     </div>
   );
 }
