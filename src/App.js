@@ -10,8 +10,8 @@ function App() {
   const [savedCount, setSavedCount] = useState(0);
 
   return (
-    <div className="min-h-screen">
-      <Nav savedCount={savedCount} />
+    <div className="relative min-h-screen">
+      <Nav savedCount={savedCount} setSavedCount={setSavedCount} />
 
       <Slider />
 
