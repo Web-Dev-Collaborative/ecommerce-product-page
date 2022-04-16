@@ -23,7 +23,7 @@ export default function Slider() {
     <div className="relative lg:max-w-md">
       <button
         type="button"
-        className="absolute left-4 top-1/2 flex aspect-square w-10 items-center justify-center rounded-full bg-white"
+        className="absolute left-4 top-1/2 flex aspect-square w-10 items-center justify-center rounded-full bg-white lg:hidden"
         onClick={prevImg}
       >
         <img
@@ -36,12 +36,12 @@ export default function Slider() {
       <img
         src={images[currImg]}
         alt="shoes"
-        className="block w-full max-w-full"
+        className="block w-full max-w-full lg:rounded-xl"
       />
 
       <button
         type="button"
-        className="absolute right-4 top-1/2 flex aspect-square w-10 items-center justify-center rounded-full bg-white"
+        className="absolute right-4 top-1/2 flex aspect-square w-10 items-center justify-center rounded-full bg-white lg:hidden"
         onClick={nextImg}
       >
         <img
@@ -51,7 +51,7 @@ export default function Slider() {
         />
       </button>
 
-      <div className="hidden md:my-6 md:flex md:w-full md:items-center md:justify-evenly">
+      <div className="hidden md:my-8 md:flex md:w-full md:items-center md:justify-evenly lg:justify-between">
         {images.map((image, index) => (
           <div
             key={image}
@@ -62,7 +62,7 @@ export default function Slider() {
             <img
               src={image}
               alt="shoes"
-              className={`w-32 rounded-lg transition-all duration-300 hover:cursor-pointer hover:opacity-40 ${
+              className={`w-32 rounded-lg transition-all duration-300 hover:cursor-pointer hover:opacity-40 lg:w-[88px] ${
                 index === currImg && 'opacity-40'
               }`}
               onClick={() => setCurrImg(index)}

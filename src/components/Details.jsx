@@ -11,12 +11,12 @@ export default function Details({ setCount, count, setSavedCount }) {
   const addCount = () => setCount((prevCount) => prevCount + 1);
 
   return (
-    <div className="px-6 py-4 pb-20">
-      <span className="mb-4 inline-block text-xs font-bold uppercase tracking-widest text-primary">
+    <div className="px-6 py-4 pb-20 lg:max-w-lg">
+      <span className="mb-4 inline-block text-xs font-bold uppercase tracking-widest text-primary lg:mb-6">
         sneaker company
       </span>
 
-      <h1 className="mb-4 text-3xl font-bold text-tertiary md:text-4xl">
+      <h1 className="mb-4 text-3xl font-bold text-tertiary md:text-4xl lg:mb-10 lg:text-5xl">
         Fall Limited Edition Sneakers
       </h1>
 
@@ -26,7 +26,7 @@ export default function Details({ setCount, count, setSavedCount }) {
         weather can offer.
       </p>
 
-      <div className="mb-5 flex items-center justify-between md:justify-start md:gap-8">
+      <div className="mb-5 flex items-center justify-between md:justify-start md:gap-8 lg:mb-8 lg:flex-col lg:items-start lg:gap-2">
         <div className="flex items-center gap-4">
           <span className="text-3xl font-bold">$125.00</span>
           <span className="rounded-md bg-secondary px-2 font-bold text-primary">
@@ -39,11 +39,11 @@ export default function Details({ setCount, count, setSavedCount }) {
       </div>
 
       <div className="space-y-4 md:flex md:items-center md:gap-4 md:space-y-0">
-        <div className="flex w-full items-center justify-between rounded-lg bg-secondary-dark p-3 md:basis-8/12">
+        <div className="flex w-full items-center justify-between rounded-lg bg-secondary-dark p-3 md:basis-8/12 ">
           <button
             type="button"
             onClick={deductCount}
-            className="p-3 transition-all duration-300 hover:opacity-50"
+            className="p-3 transition-all duration-300 hover:opacity-50 lg:px-1"
           >
             <img src={minusIcon} alt="minus" />
           </button>
@@ -53,7 +53,7 @@ export default function Details({ setCount, count, setSavedCount }) {
           <button
             type="button"
             onClick={addCount}
-            className="p-3 transition-all duration-300 hover:opacity-50"
+            className="p-3 transition-all duration-300 hover:opacity-50 lg:px-1"
           >
             <img src={plusIcon} alt="plus" />
           </button>
