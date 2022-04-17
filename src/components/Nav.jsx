@@ -82,13 +82,11 @@ export default function Nav({ savedCount, setSavedCount }) {
           )}
         </div>
 
-        <button type="button" onClick={() => setIsCartOpen(!isCartOpen)}>
-          <img
-            src={avatar}
-            alt="avatar"
-            className="w-6 rounded-full hover:outline hover:outline-1 hover:outline-primary md:w-10 lg:w-12"
-          />
-        </button>
+        <img
+          src={avatar}
+          alt="avatar"
+          className="w-6 rounded-full hover:cursor-pointer hover:outline hover:outline-1 hover:outline-primary md:w-10 lg:w-12"
+        />
       </div>
 
       {isCartOpen && (
