@@ -11,7 +11,7 @@ function App() {
   const [savedCount, setSavedCount] = useState(0);
 
   return (
-    <div className="relative min-h-screen lg:grid lg:grid-rows-[1fr_auto]">
+    <div className="relative min-h-screen bg-white lg:grid lg:grid-rows-[1fr_auto]">
       <div className="mx-auto max-w-6xl">
         <Nav savedCount={savedCount} setSavedCount={setSavedCount} />
 
