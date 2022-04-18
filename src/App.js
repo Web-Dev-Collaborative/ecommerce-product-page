@@ -15,7 +15,7 @@ function App() {
       <div className="mx-auto max-w-6xl">
         <Nav savedCount={savedCount} setSavedCount={setSavedCount} />
 
-        <div className="lg:mt-20 lg:flex lg:items-center lg:justify-center lg:gap-24 lg:px-12">
+        <main className="lg:mt-20 lg:flex lg:items-center lg:justify-center lg:gap-24 lg:px-12">
           <Slider />
 
           <Details
@@ -23,7 +23,7 @@ function App() {
             setCount={setCount}
             setSavedCount={setSavedCount}
           />
-        </div>
+        </main>
       </div>
 
       <Footer />

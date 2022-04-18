@@ -32,18 +32,16 @@ export default function Nav({ savedCount, setSavedCount }) {
           type="button"
           onClick={() => setIsMenuOpen(false)}
           className="z-30"
+          aria-label="Close"
         >
-          <img
-            src={closeIcon}
-            alt="hamburger"
-            className="mt-1.5 w-4 lg:hidden"
-          />
+          <img src={closeIcon} alt="close" className="mt-1.5 w-4 lg:hidden" />
         </button>
       ) : (
         <button
           type="button"
           onClick={() => setIsMenuOpen(true)}
           className="z-30"
+          aria-label="Hamburger"
         >
           <img
             src={menuIcon}
