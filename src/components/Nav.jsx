@@ -55,7 +55,7 @@ export default function Nav({ savedCount, setSavedCount }) {
 
       {isMenuOpen && (
         <div className="absolute top-0 left-0 z-20 min-h-full w-full bg-black/70">
-          <ul className="absolute top-0 left-0 min-h-full w-8/12 space-y-4 bg-white p-7 pt-20 text-lg font-bold">
+          <ul className="absolute top-0 left-0 min-h-full w-8/12 space-y-4 bg-white p-7 pt-20 text-lg font-bold md:w-1/3">
             {navItemsDisplay}
           </ul>
         </div>

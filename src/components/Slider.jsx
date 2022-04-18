@@ -23,7 +23,7 @@ export default function Slider() {
     <div className="relative lg:max-w-md">
       <button
         type="button"
-        className="absolute left-4 top-1/2 flex aspect-square w-10 items-center justify-center rounded-full bg-white lg:hidden"
+        className="absolute left-4 top-[40%] flex aspect-square w-10 items-center justify-center rounded-full bg-white lg:-left-8 lg:top-[32%] lg:w-20"
         onClick={prevImg}
       >
         <img
@@ -41,7 +41,7 @@ export default function Slider() {
 
       <button
         type="button"
-        className="absolute right-4 top-1/2 flex aspect-square w-10 items-center justify-center rounded-full bg-white lg:hidden"
+        className=" absolute right-4 top-[40%] flex aspect-square w-10 items-center justify-center rounded-full bg-white lg:-right-8 lg:top-[32%] lg:w-20"
         onClick={nextImg}
       >
         <img
