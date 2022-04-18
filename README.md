@@ -23,7 +23,6 @@ Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
-- Open a lightbox gallery by clicking on the large product image
 - Switch the large product image by clicking on the small thumbnail images
 - Add items to the cart
 - View the cart and remove items from it
@@ -34,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [TO_BE_UPDATED](TO_BE_UPDATED)
+- Live Site URL: [https://kens-visuals.github.io/ecommerce-product-page/](https://kens-visuals.github.io/ecommerce-product-page/)
 - Solution URL: [TO_BE_UPDATED](TO_BE_UPDATED)
 
 ## My process
@@ -42,7 +41,7 @@ Users should be able to:
 ### Built with
 
 - React
-- Styled Components
+- Tailwind CSS
 - Semantic HTML5 markup
 - CSS Flexbox
 - CSS Grid
@@ -50,34 +49,11 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+This was my first Intermediate project, and I'm really excited about the stack that I used. It wasn't a really big project, but it was big enough for Tailwind CSS. I used Tailwind CSS before in a small project, however, this time around it was completely different experience. Although, I like Tailwind CSS a lot, I don't think one can use it in each and every project. Sometimes, I want to take the control in my hands, and in that case styled-components come to help. In brief, cool project, that helped me to know Tailwind better and decide in what type of project I'd like to use it in the future.
 
 ### Useful resources
 
-- [TO_BE_UPDATED]() - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [TO_BE_UPDATED]() - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [My image slider](https://codesandbox.io/embed/nice-snyder-h46gsi?fontsize=14&hidenavigation=1&theme=dark) - Before beginning this project, I just wanted to make a simple slider in React and plain CSS for some practice. So, if you need a reference, here's one.
 
 ## Author's Links
 
