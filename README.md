@@ -11,7 +11,6 @@ This is a solution to the [E-Commerce Product Page Challenge on Frontend Mentor]
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author's Links](#authors-links)
 
@@ -49,7 +48,7 @@ Users should be able to:
 
 ### What I learned
 
-This was my first Intermediate project, and I'm really excited about the stack that I used. It wasn't a really big project, but it was big enough for Tailwind CSS. I used Tailwind CSS before in a small project, however, this time around it was completely different experience. Although, I like Tailwind CSS a lot, I don't think one can use it in each and every project. Sometimes, I want to take the control in my hands, and in that case styled-components come to help. In brief, cool project, that helped me to know Tailwind better and decide in what type of project I'd like to use it in the future.
+This was my first Intermediate project, and I'm really excited about the stack that I used. It wasn't a really big project, but it was big enough for Tailwind CSS. I used Tailwind CSS before in a small project, however, this time around it was a completely different experience. Although, I like Tailwind CSS a lot, I don't think one can use it in each and every project. Sometimes, I want to take the control in my hands, and in that case styled-components come to help. In brief, a cool project, that helped me to know Tailwind better and decide in what type of project I'd like to use it in the future.
 
 ### Useful resources
 
